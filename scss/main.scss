@@ -51,11 +51,19 @@ ul, li {
     
     .index-middle {
         flex: 4;
-        background-color: blue;
+        background-color: $green_light;
+        
+        .index-middle_btn {
+            @include readMore;
+        }
     }
     
     .index-right {
         flex: 5;
-        background-color: yellow;
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/images/index-right-bg.jpg') no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+        background-size: cover;
     }
 }
